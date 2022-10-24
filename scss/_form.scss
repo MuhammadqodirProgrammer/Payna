@@ -1,0 +1,96 @@
+// vodeo , form 
+
+.save__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    gap: 90px;
+    iframe{
+        border-radius: 40px;
+    }
+}
+
+.save_form{
+  
+    span{
+        font-family: 'Poppins';
+font-weight: 700;
+font-size: 16px;
+color: #F75C4E;
+    }
+    h5{
+        font-family: 'Poppins';
+font-style: normal;
+// font-weight: 700;
+font-size: 36px;
+// line-height: 54px;
+width: 442px;
+    }
+
+    p{
+        width: 386px;
+font-family: 'Poppins';
+font-weight: 400;
+font-size: 16px;
+line-height: 32px;
+/* or 200% */
+ color: #575455;
+    }
+}
+form{
+    margin-top: 50px;
+}
+#email{
+    @include btn( #F5F6FB,299px,#575455)
+}
+.submit{
+    @include btn( #1F7CFF,180px,white);
+    transform: translateX(-50px);
+    
+}
+
+
+@media (max-width:767px){
+    .save_form{
+//         display: flex;
+//  flex-direction: column;        
+
+        h5{
+            max-width: 328px;
+            margin: 0 auto;
+        }
+        p{
+            width: 333px;
+            margin: 0 auto;
+        }
+    }
+    .save__container{
+        gap: 10px;
+        iframe{
+            width: 321px;
+        }
+    
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    .submit{
+    @include btn( #1F7CFF,299px,white);
+    transform: translateX(0);
+
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .save__container{
+        gap: 10px;
+        iframe{
+            width: 551px;
+        }
+    
+    }
+}

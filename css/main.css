@@ -14,7 +14,7 @@ ul li {
 }
 
 body {
-  background: #F5F6FB;
+  background: #ffffff;
 }
 
 .container {
@@ -223,6 +223,7 @@ body {
   }
   .brends {
     max-width: 381px;
+    max-height: 300px;
     flex-wrap: wrap;
     gap: 20px;
   }
@@ -263,6 +264,9 @@ body {
   .box2 p {
     width: 240px;
     margin-bottom: 20px;
+  }
+  .brends {
+    max-width: 600px;
   }
 }
 .your {
@@ -401,5 +405,106 @@ body {
 @media (min-width: 768px) and (max-width: 1024px) {
   .mixins {
     gap: 50px 0;
+  }
+}
+.save__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  gap: 90px;
+}
+.save__container iframe {
+  border-radius: 40px;
+}
+
+.save_form span {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 16px;
+  color: #F75C4E;
+}
+.save_form h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 36px;
+  width: 442px;
+}
+.save_form p {
+  width: 386px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  /* or 200% */
+  color: #575455;
+}
+
+form {
+  margin-top: 50px;
+}
+
+#email {
+  padding: 12px 48px;
+  width: 299px;
+  height: 48px;
+  color: #575455;
+  background: #F5F6FB;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit {
+  padding: 12px 48px;
+  width: 180px;
+  height: 48px;
+  color: white;
+  background: #1F7CFF;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transform: translateX(-50px);
+}
+
+@media (max-width: 767px) {
+  .save_form h5 {
+    max-width: 328px;
+    margin: 0 auto;
+  }
+  .save_form p {
+    width: 333px;
+    margin: 0 auto;
+  }
+  .save__container {
+    gap: 10px;
+  }
+  .save__container iframe {
+    width: 321px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  .submit {
+    padding: 12px 48px;
+    width: 299px;
+    height: 48px;
+    color: white;
+    background: #1F7CFF;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transform: translateX(0);
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .save__container {
+    gap: 10px;
+  }
+  .save__container iframe {
+    width: 551px;
   }
 }/*# sourceMappingURL=main.css.map */

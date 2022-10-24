@@ -116,6 +116,7 @@ color: #070F18;
     }
     .brends{
         max-width: 381px;
+        max-height: 300px;
         flex-wrap: wrap;
         gap: 20px;
         img{
@@ -162,5 +163,8 @@ color: #070F18;
             width: 240px;
             margin-bottom: 20px;
         }
+    }
+    .brends{
+max-width: 600px;
     }
     }
