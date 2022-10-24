@@ -1,0 +1,166 @@
+// hero container
+
+.hero__container{
+    margin-top: 100px;
+    padding: 0 50px;
+}
+
+.box1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 0 24px;
+}
+.hero__text {
+
+    h1{
+        width: 442px;
+height: 166px;
+font-family: 'Poppins';
+font-weight: 700;
+font-size: 55px;
+line-height: 82px;
+margin-bottom: 20px;
+    }
+    p{
+        width: 420px;
+height: 64px;
+font-family: 'Poppins';
+font-weight: 400;
+font-size: 16px;
+line-height: 32px;
+/* or 200% */
+color: #575455;
+margin-bottom: 30px;
+    }
+    button{
+        @include btn(#1F7CFF,180px,white)
+    }
+}
+.hero__imgs{
+    background-image: url(../img/imagepayna.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:540px;
+  height:400px;
+  border-radius: 60px;
+  position: relative;
+  }
+  .statistica{
+    position: absolute;
+    left: -25%;
+    top: 30%;
+  }
+  .statistica + img {
+    position: absolute;
+    right: -10%;
+    top: 10%;
+  }
+
+  .box2{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    p{
+        width: 151px;
+height: 48px;
+font-family: 'Poppins';
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+color: #070F18;
+    }
+  }
+  .brends{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    max-width: 723.73px;
+    max-height: 30px;
+    gap: 50px;
+    img{
+        display: inline-block;
+        max-width: 110.54px;
+    }
+  }
+
+  @media (max-width:767px){
+    
+    .container{
+        margin: 0 auto;
+        max-width: 767px;
+
+    }
+  
+    .hero__imgs{
+        display: none;
+    }
+    .hero__text{
+        h1{
+            width: 305px;
+            font-size: 38px;
+        }
+        p{
+            width: 319px;
+        }
+        button{
+            margin-top: 30px;
+        }
+    }
+    .box2{
+        flex-direction: column;
+        p{
+            width: 240px;
+            margin-bottom: 20px;
+        }
+    }
+    .brends{
+        max-width: 381px;
+        flex-wrap: wrap;
+        gap: 20px;
+        img{
+            display: block;
+            margin-top: 20px;
+        }
+    }
+
+  }
+    
+   
+
+    @media (min-width:768px) and (max-width:1024px) {
+        .header__nav-list{
+            gap: 30px;
+        }
+
+        .box1{
+            // width: 100%;
+            margin-top: 100px;
+            justify-content: center;
+        }
+    .hero__imgs{
+        display: none;
+    }
+    .hero__text{
+       text-align: center;
+        h1{
+            width: 442px;
+        }
+        p{
+            width: 420px;
+        }
+        button{
+            margin-top: 30px;
+        }
+    }
+    .box2{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        p{
+            width: 240px;
+            margin-bottom: 20px;
+        }
+    }
+    }

@@ -1,0 +1,132 @@
+
+ .your{
+text-align: center;
+width: 100%;
+justify-content: center;
+align-items: center;
+margin-top: 130px;
+    span{
+        width: 111px;
+height: 24px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+color: #F75C4E;
+    }
+    h3{
+        width: 325px;
+height: 54px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 54px;
+margin: 0 auto;
+margin-bottom: 20px;
+/* identical to box height */
+    }
+    p{
+        width: 385px;
+height: 64px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 32px;
+/* or 200% */
+color: #575455;
+max-width: 100%;
+text-align: center;
+margin: 0 auto;
+    }
+ }
+ 
+
+.mixins{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px 93px ;
+    margin-top: 70px;
+}
+
+ .mixsin{
+    display: flex;
+    gap:24px;
+    align-items: flex-start;
+    width: 350px;
+    h4{
+        font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+color: #070F18;
+margin-bottom: 30px;
+    }
+    p{
+        width: 216px;
+height: 54px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 32px;
+/* or 200% */
+color: #575455;
+    }
+}
+.span{
+    // margin-top: 20px;
+    display: block;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-1{
+    @include icon(#1F7CFF, "../img/diplomat.svg");
+}
+.icon-2{
+    @include icon(#F75C4E, "../img/Vector.svg");
+}
+.icon-3{
+    @include icon(#191046, "../img/fi_wifi-off.svg");
+}
+.icon-4{
+    @include icon(#FF1FB3, "../img/fi_trello.svg");
+}
+.icon-5{
+    @include icon(#5C4EF7, "../img/fi_gift.svg");
+}
+.icon-6{
+    @include icon(#F7954E, "../img/fi_globe.png");
+}
+
+
+@media (max-width:767px){
+    .your{
+
+        h3{
+            font-size: 28px;
+            width: 253px;
+        }
+        p{
+            width: 333px;
+min-height: 96px;
+        }
+    }
+    .mixins{
+        gap: 60px;
+    }
+}
+@media (min-width:768px) and (max-width:1024px){
+    .mixins{
+        gap: 50px 0;
+    }
+}

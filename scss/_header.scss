@@ -1,0 +1,94 @@
+
+#header{
+    margin: 40px 0;
+}
+.header_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    display: block;
+}
+
+.header__nav-list{
+    display: flex;
+    gap: 60px;
+}
+.header__nav-list-item{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+}
+
+.singin {
+//     padding: 12px 48px;
+//     width: 150px;
+// height: 48px;
+// background: #E5E5E5;
+// border-radius: 50px;
+@include btn(#e5e5e5)
+}
+.icon{
+    display: none;
+}
+
+#menu{
+    appearance: none;
+position: absolute;
+}
+
+@media (max-width:767px){
+    
+        .container{
+            margin: 0 auto;
+            max-width: 767px;
+
+        }
+
+
+        #header{
+            position: relative;
+        }
+        .header__nav-list{
+            position: absolute;
+            background-color: green;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            width: 40%;
+
+            flex-direction: column;
+            transform: translateX(-100%);
+        }
+        // .header_container{
+            //     display: flex;
+            // }
+            
+            .icon{
+                display: block;
+                
+            }
+            .fa-2x{
+                display: block;
+            }
+            .singin{
+                display: none;
+            }
+
+        }
+
+
+        
+       
+
+        @media (min-width:768px) and (max-width:1024px) {
+            .header__nav-list{
+                gap: 30px;
+            }
+        }
+        @media (max-width:568px){
+            
+        }
+        
